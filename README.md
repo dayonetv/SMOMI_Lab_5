@@ -85,7 +85,7 @@ def unfreeze_model(model):
 * График функции потерь для предобученной нейронной сети EfficientNet-B0 (использование техники Fine Tuning) для валидационного набора данных:  
   + До разморозки слоев (25 эпох):  
 
-<img src="./epoch_loss_unfreeze.svg">  
+<img src="./epoch_loss_before_unfreeze.svg">  
 
   + После разморозки слоев (20 эпох):  
 
