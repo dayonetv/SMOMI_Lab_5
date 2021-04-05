@@ -79,18 +79,6 @@ def unfreeze_model(model):
         if not isinstance(layer,tf.keras.layers.BatchNormalization):
             layer.trainable = True
 
-def unfreeze_model1():
-  inputs = tf.keras.Input(shape=(235, 235, 3))
-  x = tf.keras.layers.GaussianNoise(stddev = 0.6)(inputs)
-  x = tf.keras.layers.experimental.preprocessing.RandomCrop(224,224)(x)
-  x = tf.keras.layers.experimental.preprocessing.RandomRotation(factor = 0.02)(x)
-  model = EfficientNetB0(include_top=False, input_tensor = x, pooling = 'avg', weights='imagenet')
-  model.trainable = True
-  x = tf.keras.layers.Flatten()(model.output)
-  outputs = tf.keras.layers.Dense(NUM_CLASSES, activation = tf.keras.activations.softmax)(x)
-  return tf.keras.Model(inputs=inputs, outputs=outputs)
-
-
 def build_model():
   inputs = tf.keras.Input(shape=(235, 235, 3))
   x = tf.keras.layers.GaussianNoise(stddev = 0.6)(inputs)
