@@ -74,6 +74,8 @@ def unfreeze_model(model):
 + График метрики точности для предобученной нейронной сети EfficientNet-B0 (использование техники Fine Tuning) для валидационного набора данных:  
   + До разморозки слоев (25 эпох):  
 
+![изображение](https://user-images.githubusercontent.com/59259102/113636042-6f27fc00-967a-11eb-92f2-97973b82e4fc.png)  
+
 <img src="./epoch_categorical_accuracy_before_unfreeze.svg">  
 
   + После разморозки слоев (20 эпох):  
@@ -84,6 +86,8 @@ def unfreeze_model(model):
 
 * График функции потерь для предобученной нейронной сети EfficientNet-B0 (использование техники Fine Tuning) для валидационного набора данных:  
   + До разморозки слоев (25 эпох):  
+
+![изображение](https://user-images.githubusercontent.com/59259102/113636100-98e12300-967a-11eb-8ef2-7814c1793d07.png)  
 
 <img src="./epoch_loss_before_unfreeze.svg">  
 
