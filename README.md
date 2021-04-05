@@ -32,15 +32,15 @@ def unfreeze_model(model):
 С помощью данной функции будут размораживаться последние 20 слоев нейронной сети EfficientNet-B0, кроме слоев ```BatchNormalization```.  
 ## С использованием техники обучения Transfer Learning и оптимальной политики изменения темпа обучения обучить нейронную сеть EfficientNet-B0 (предварительно обученную на базе изображений imagenet) для решения задачи классификации изображений Oregon Wildlife с совместным использованием техник аугментации данных с оптимальными параметрами:  
 #### В результате получили следующие графики:  
-+ График метрики точности для предобученной нейронной сети EfficientNet-B0 для тренировочного и валидационного наборов данных:
++ График метрики точности для предобученной нейронной сети EfficientNet-B0 для тренировочного и валидационного наборов данных:  
 
-![legend_accuracy_brigthness_contrast](https://user-images.githubusercontent.com/59259102/112815848-6b4c1680-9089-11eb-9ef2-a06840cf72f3.png)  
-
+![изображение](https://user-images.githubusercontent.com/59259102/113625713-f0c35e00-9669-11eb-846d-945227d7bade.png)   
+  
 <img src="./epoch_categorical_accuracy_all_in_one.svg">
 
 * График функции потерь для предобученной нейронной сети EfficientNet-B0 для тренировочного и валидационного наборов данных:  
 
-![legend_loss_brightness_contrast](https://user-images.githubusercontent.com/59259102/112822862-29bf6980-9091-11eb-8989-d7d83ce88fc8.png)  
+![изображение](https://user-images.githubusercontent.com/59259102/113625617-cd001800-9669-11eb-8c48-0b65fefc77fd.png)  
  
 
 <img src="./epoch_loss_all_in_one.svg">
